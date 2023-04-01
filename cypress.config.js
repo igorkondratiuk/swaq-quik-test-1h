@@ -1,10 +1,12 @@
 const { defineConfig } = require("cypress");
+require('dotenv/config')
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    baseUrl: process.env.BASE_URL,
+
+    //baseUrl: 'https://www.saucedemo.com',
+    baseUrl:process.env.BASE_URL,
+    chromeWebSecurity: false,
+    video: false,
   },
 });
