@@ -6,8 +6,8 @@ describe('Auth', () => {
 
   it('auth with valid data', () => {
 
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="username"]').type(Cypress.env('username'))
+    cy.get('[data-test="password"]').type(Cypress.env('password'))
     cy.get('[data-test="login-button"]').click()
 
     cy.location('pathname').should('eq','/inventory.html')
