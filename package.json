@@ -1,0 +1,23 @@
+{
+  "name": "swaq-quik-test-1h",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorkondratiuk/swaq-quik-test-1h.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorkondratiuk/swaq-quik-test-1h/issues"
+  },
+  "homepage": "https://github.com/igorkondratiuk/swaq-quik-test-1h#readme",
+  "dependencies": {
+    "cypress": "^12.9.0"
+  }
+}
